@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quiz</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <h1>FRONT-END QUIZ APP</h1>
+     
+	<div class="quiz_wrapper">
+		<div class="quiz_main_wrapper">
+			<div id="start">
+				<div id="start-button">
+					<button>Start Quiz</button>
+				</div>
+			</div>
+			<div id="question_body" class="hide">
+				<h2>FRONT-END QUIZ APP</h2>
+				<div class="question" id="questionBox">
+					
+				</div>
+				
+				<div class="options">
+					<ul id="ul">
+						<li id="op1" onclick="button(this)"></li>
+						<li id="op2" onclick="button(this)"></li>
+						<li id="op3" onclick="button(this)"></li>
+						<li id="op4" onclick="button(this)"></li>
+					</ul>
+				</div>
+				<div class="score">
+					<div class="next">
+						<button type="button" onclick="next()" id="button">Next</button>
+					</div>
+					<div class="score-card">
+						score: <span id="scoreCard">0</span>
+					</div>
+				</div>
+				<div id="try-again" class="hide">
+					<button class="try_again_btn">Try Again</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<script src="js/query.js"></script>
+</body>
+</html>
